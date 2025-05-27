@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Untuk update judul tugas secara real-time
     const input = document.getElementById('judulTugasInput');
     const preview = document.getElementById('judulTugasPreview');
     if (input && preview) {
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Untuk toggle tombol active pada Modul dan Tugas
     const modulBtn = document.getElementById('modulToggle');
     const tugasBtn = document.getElementById('tugasToggle');
     const buttons = [modulBtn, tugasBtn].filter(Boolean);
