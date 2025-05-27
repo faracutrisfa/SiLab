@@ -1,1 +1,33 @@
-htm
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body class="mx-auto w-[402px] h-[100vh] bg-gray-50">
+    <div
+      class="flex flex-col items-center justify-center h-full bg-[url('../assets/SplashBackground.png')] bg-cover bg-center"
+    >
+      <img class="mx-auto w-[262px]" src="../assets/maskot.png" alt="brone" />
+      <!-- Menambahkan konten teks di bawah gambar -->
+      <div class="text-center mt-4 w-[262px]">
+        <h1 class="text-[#F4810C] text-2xl font-bold">
+          Hai, Selamat Datang di SiLab!
+        </h1>
+        <p class="text-[#2A60CC] text-lg">
+          Aplikasi Pengelolaan Laboratorium Terintegrasi.
+        </p>
+      </div>
+      <div class="mt-6 w-full flex justify-center">
+        <a
+          class="w-[80%] mt-10 bg-[#5580D6] hover:bg-indigo-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 transform hover:scale-[1.02] active:scale-[0.98] text-center"
+          href="Auth.html"
+          >Masuk</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
