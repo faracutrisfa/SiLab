@@ -10,20 +10,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" href="" />
+    <script defer>
+        function openModal() {
+            document.getElementById('joinModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('joinModal').classList.add('hidden');
+        }
+
+        window.onclick = function (event) {
+            const modal = document.getElementById('joinModal');
+            if (event.target == modal) {
+                modal.classList.add('hidden');
+            }
+        }
+    </script>
 </head>
 
 <body class="mx-auto w-[402px] h-[100vh] bg-gray-50">
     <div class="flex items-center justify-between mb-5">
         <section class="w-full h-[126px] relative bg-[#5580D6] rounded-b-[20%]">
-            <div class="absolute bottom-10 left-10 text-xl font-semibold text-white">
-                <a href="./Homepage.html" class="flex items-center gap-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                        <path
-                            d="M16.9421 20.4204L9.73738 13.1001C9.57937 12.9404 9.49074 12.7248 9.49074 12.5001C9.49074 12.2755 9.57937 12.0599 9.73738 11.9001L16.9405 4.57982C17.0984 4.41911 17.1869 4.2028 17.1869 3.97748C17.1869 3.75215 17.0984 3.53584 16.9405 3.37513C16.8634 3.29599 16.7711 3.2331 16.6693 3.19016C16.5675 3.14721 16.4581 3.12509 16.3475 3.12509C16.237 3.12509 16.1276 3.14721 16.0258 3.19016C15.9239 3.2331 15.8317 3.29599 15.7546 3.37513L8.55144 10.6939C8.07812 11.1759 7.81293 11.8245 7.81293 12.5001C7.81293 13.1757 8.07812 13.8243 8.55144 14.3064L15.7546 21.6251C15.8317 21.7045 15.9241 21.7676 16.026 21.8107C16.128 21.8538 16.2376 21.876 16.3483 21.876C16.459 21.876 16.5686 21.8538 16.6706 21.8107C16.7726 21.7676 16.8649 21.7045 16.9421 21.6251C17.1 21.4644 17.1885 21.2481 17.1885 21.0228C17.1885 20.7975 17.1 20.5812 16.9421 20.4204Z"
-                            fill="#FAFAFA" />
-                    </svg>
-                    <p class="font-bold">Kelas</p>
-                </a>
+            <div class="absolute bottom-10 left-10 text-xl font-semibold text-white w-[80%]">
+                <div class="flex items-center justify-between gap-4 ">
+                    <a href="./Homepage.html" class="flex items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <path
+                                d="M16.9421 20.4204L9.73738 13.1001C9.57937 12.9404 9.49074 12.7248 9.49074 12.5001C9.49074 12.2755 9.57937 12.0599 9.73738 11.9001L16.9405 4.57982C17.0984 4.41911 17.1869 4.2028 17.1869 3.97748C17.1869 3.75215 17.0984 3.53584 16.9405 3.37513C16.8634 3.29599 16.7711 3.2331 16.6693 3.19016C16.5675 3.14721 16.4581 3.12509 16.3475 3.12509C16.237 3.12509 16.1276 3.14721 16.0258 3.19016C15.9239 3.2331 15.8317 3.29599 15.7546 3.37513L8.55144 10.6939C8.07812 11.1759 7.81293 11.8245 7.81293 12.5001C7.81293 13.1757 8.07812 13.8243 8.55144 14.3064L15.7546 21.6251C15.8317 21.7045 15.9241 21.7676 16.026 21.8107C16.128 21.8538 16.2376 21.876 16.3483 21.876C16.459 21.876 16.5686 21.8538 16.6706 21.8107C16.7726 21.7676 16.8649 21.7045 16.9421 21.6251C17.1 21.4644 17.1885 21.2481 17.1885 21.0228C17.1885 20.7975 17.1 20.5812 16.9421 20.4204Z"
+                                fill="#FAFAFA" />
+                        </svg>
+                        <p class="font-bold">Kelas</p>
+                    </a>
+                    <button onclick="openModal()"
+                        class="p-2 bg-white rounded-lg border border-[#0036A1]  text-[#0036A1] text-sm">Join
+                        Kelas</button>
+                </div>
             </div>
         </section>
     </div>
@@ -104,50 +125,72 @@
         </div>
     </div>
 
-
-
-
-<footer class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[402px] bg-white border-t border-gray-200 px-6 py-3">
-    <div class="flex justify-around items-center">
-      <a href="./Homepage.html" class="flex flex-col items-center space-y-1 text-blue-600">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
-          <path
-            d="M25 21.7503V14.8154C25 14.1475 24.9994 13.8133 24.9182 13.5025C24.8462 13.2271 24.7281 12.9665 24.5682 12.7309C24.3878 12.4651 24.1369 12.2447 23.6343 11.8049L17.6343 6.5549C16.701 5.7383 16.2344 5.3302 15.7092 5.1749C15.2465 5.03805 14.7533 5.03805 14.2905 5.1749C13.7658 5.33008 13.2998 5.73779 12.368 6.55317L6.36597 11.8049C5.8633 12.2447 5.61255 12.4651 5.43213 12.7309C5.27224 12.9665 5.15319 13.2271 5.08121 13.5025C5 13.8133 5 14.1475 5 14.8154V21.7503C5 22.9152 5 23.4974 5.1903 23.9568C5.44404 24.5694 5.9304 25.0567 6.54297 25.3104C7.0024 25.5007 7.58482 25.5007 8.74968 25.5007C9.91453 25.5007 10.4976 25.5007 10.957 25.3104C11.5696 25.0567 12.0558 24.5695 12.3096 23.9569C12.4999 23.4975 12.5 22.9151 12.5 21.7502V20.5002C12.5 19.1195 13.6193 18.0002 15 18.0002C16.3807 18.0002 17.5 19.1195 17.5 20.5002V21.7502C17.5 22.9151 17.5 23.4975 17.6903 23.9569C17.944 24.5695 18.4304 25.0567 19.043 25.3104C19.5024 25.5007 20.0848 25.5007 21.2497 25.5007C22.4145 25.5007 22.9976 25.5007 23.457 25.3104C24.0696 25.0567 24.5558 24.5694 24.8096 23.9568C24.9999 23.4974 25 22.9152 25 21.7503Z"
-            fill="#0059B2" stroke="#0059B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <span class="text-xs font-bold text-[#0059B2]">Home</span>
-      </a>
-
-      <a href="../Jadwal/Jadwal.html" class="flex opacity-50 hover:opacity-100 flex-col items-center space-y-1">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-          <path class=""
-            d="M10 5H9.00024C7.60011 5 6.89953 5 6.36475 5.27248C5.89434 5.51217 5.51217 5.89434 5.27248 6.36475C5 6.89953 5 7.60011 5 9.00024V10M10 5H20M10 5V2.5M20 5H21.0002C22.4004 5 23.0995 5 23.6342 5.27248C24.1046 5.51217 24.4881 5.89434 24.7278 6.36475C25 6.899 25 7.59874 25 8.99614V10M20 5V2.5M5 10V21.0002C5 22.4004 5 23.1001 5.27248 23.6349C5.51217 24.1053 5.89434 24.4881 6.36475 24.7278C6.899 25 7.59874 25 8.99614 25H21.0039C22.4013 25 23.1 25 23.6342 24.7278C24.1046 24.4881 24.4881 24.1053 24.7278 23.6349C25 23.1006 25 22.4019 25 21.0045V10M5 10H25M20 20H20.0025L20.0024 20.0025L20 20.0024V20ZM15 20H15.0025L15.0024 20.0025L15 20.0024V20ZM10 20H10.0025L10.0024 20.0025L10 20.0024V20ZM20.0024 15V15.0025L20 15.0024V15H20.0024ZM15 15H15.0025L15.0024 15.0025L15 15.0024V15ZM10 15H10.0025L10.0024 15.0025L10 15.0024V15Z"
-            stroke="#0059B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <span class="text-xs font-bold text-[#0059B2]">Jadwal</span>
-      </a>
-
-      <button class="flex opacity-50 hover:opacity-100 flex-col items-center space-y-1 text-gray-400 hover:text-gray-600">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-          <path
-            d="M21 11.0667C21 16.3499 16.5222 20.6334 11 20.6334C10.3507 20.6343 9.70324 20.5742 9.06542 20.4545C8.60633 20.3682 8.37678 20.3251 8.21653 20.3496C8.05627 20.3741 7.82918 20.4948 7.37499 20.7364C6.09014 21.4197 4.59195 21.661 3.15111 21.393C3.69874 20.7194 4.07275 19.9112 4.23778 19.0448C4.33778 18.5148 4.09 18 3.71889 17.6231C2.03333 15.9115 1 13.6051 1 11.0667C1 5.78357 5.47778 1.5 11 1.5C16.5222 1.5 21 5.78357 21 11.0667Z"
-            stroke="#0059B2" stroke-opacity="0.5" stroke-width="1.5" stroke-linejoin="round" />
-          <path d="M10.9955 11.5H11.0045M14.991 11.5H15M7 11.5H7.00897" stroke="#0059B2" stroke-opacity="0.5"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <span class="text-xs font-bold text-[#0059B2]">Chat</span>
-      </button>
-
-      <button class="flex opacity-50 hover:opacity-100 flex-col items-center space-y-1 text-gray-400 hover:text-gray-600">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
-          <path
-            d="M3.75 19.2503V21.5C3.75 22.9001 3.75 23.5997 4.02248 24.1345C4.26217 24.6049 4.64434 24.9881 5.11475 25.2278C5.649 25.5 6.34874 25.5 7.74614 25.5H26.2502M3.75 19.2503V6.75M3.75 19.2503L8.56675 15.2363L8.57073 15.2331C9.44208 14.507 9.8786 14.1432 10.3519 13.9955C10.9111 13.8209 11.5134 13.8485 12.0544 14.073C12.5131 14.2633 12.9153 14.6655 13.7197 15.4699L13.7278 15.4779C14.5446 16.2948 14.9542 16.7043 15.4202 16.8942C15.9717 17.1188 16.5857 17.1382 17.1509 16.9507C17.6301 16.7918 18.0678 16.4094 18.9429 15.6437L26.25 9.25"
-            stroke="#0059B2" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        <span class="text-xs font-bold text-[#0059B2]">Dashboard</span>
-      </button>
+    <div id="joinModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-xl w-11/12 max-w-md p-6 relative">
+            <button onclick="closeModal()"
+                class="absolute top-2 right-4 text-gray-500 hover:text-red-500 text-xl">x</button>
+            <h2 class="text-xl font-bold mb-4">Pilihan</h2>
+            <p class="font-semibold text-[#5D5D5D]">Kode Enroll (Praktikan)</p>
+            <input type="text" placeholder="Masukkan kode enroll"
+                class="w-full border border-gray-300 rounded-lg px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <p class="font-semibold text-[#5D5D5D]">Kode Enroll (Asisten Praktikum)</p>
+            <input type="text" placeholder="Masukkan kode enroll"
+                class="w-full border border-gray-300 rounded-lg px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <div class="flex justify-end">
+                <button onclick="closeModal()" class="bg-[#0036A1] w-full text-white px-4 py-2 rounded-lg hover:bg-blue-600">Enroll</button>
+            </div>
+        </div>
     </div>
-  </footer>
+
+
+
+
+    <footer
+        class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[402px] bg-white border-t border-gray-200 px-6 py-3">
+        <div class="flex justify-around items-center">
+            <a href="./Homepage.html" class="flex flex-col items-center space-y-1 text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                    <path
+                        d="M25 21.7503V14.8154C25 14.1475 24.9994 13.8133 24.9182 13.5025C24.8462 13.2271 24.7281 12.9665 24.5682 12.7309C24.3878 12.4651 24.1369 12.2447 23.6343 11.8049L17.6343 6.5549C16.701 5.7383 16.2344 5.3302 15.7092 5.1749C15.2465 5.03805 14.7533 5.03805 14.2905 5.1749C13.7658 5.33008 13.2998 5.73779 12.368 6.55317L6.36597 11.8049C5.8633 12.2447 5.61255 12.4651 5.43213 12.7309C5.27224 12.9665 5.15319 13.2271 5.08121 13.5025C5 13.8133 5 14.1475 5 14.8154V21.7503C5 22.9152 5 23.4974 5.1903 23.9568C5.44404 24.5694 5.9304 25.0567 6.54297 25.3104C7.0024 25.5007 7.58482 25.5007 8.74968 25.5007C9.91453 25.5007 10.4976 25.5007 10.957 25.3104C11.5696 25.0567 12.0558 24.5695 12.3096 23.9569C12.4999 23.4975 12.5 22.9151 12.5 21.7502V20.5002C12.5 19.1195 13.6193 18.0002 15 18.0002C16.3807 18.0002 17.5 19.1195 17.5 20.5002V21.7502C17.5 22.9151 17.5 23.4975 17.6903 23.9569C17.944 24.5695 18.4304 25.0567 19.043 25.3104C19.5024 25.5007 20.0848 25.5007 21.2497 25.5007C22.4145 25.5007 22.9976 25.5007 23.457 25.3104C24.0696 25.0567 24.5558 24.5694 24.8096 23.9568C24.9999 23.4974 25 22.9152 25 21.7503Z"
+                        fill="#0059B2" stroke="#0059B2" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span class="text-xs font-bold text-[#0059B2]">Home</span>
+            </a>
+
+            <a href="../Jadwal/Jadwal.html" class="flex opacity-50 hover:opacity-100 flex-col items-center space-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <path class=""
+                        d="M10 5H9.00024C7.60011 5 6.89953 5 6.36475 5.27248C5.89434 5.51217 5.51217 5.89434 5.27248 6.36475C5 6.89953 5 7.60011 5 9.00024V10M10 5H20M10 5V2.5M20 5H21.0002C22.4004 5 23.0995 5 23.6342 5.27248C24.1046 5.51217 24.4881 5.89434 24.7278 6.36475C25 6.899 25 7.59874 25 8.99614V10M20 5V2.5M5 10V21.0002C5 22.4004 5 23.1001 5.27248 23.6349C5.51217 24.1053 5.89434 24.4881 6.36475 24.7278C6.899 25 7.59874 25 8.99614 25H21.0039C22.4013 25 23.1 25 23.6342 24.7278C24.1046 24.4881 24.4881 24.1053 24.7278 23.6349C25 23.1006 25 22.4019 25 21.0045V10M5 10H25M20 20H20.0025L20.0024 20.0025L20 20.0024V20ZM15 20H15.0025L15.0024 20.0025L15 20.0024V20ZM10 20H10.0025L10.0024 20.0025L10 20.0024V20ZM20.0024 15V15.0025L20 15.0024V15H20.0024ZM15 15H15.0025L15.0024 15.0025L15 15.0024V15ZM10 15H10.0025L10.0024 15.0025L10 15.0024V15Z"
+                        stroke="#0059B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="text-xs font-bold text-[#0059B2]">Jadwal</span>
+            </a>
+
+            <button
+                class="flex opacity-50 hover:opacity-100 flex-col items-center space-y-1 text-gray-400 hover:text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                    <path
+                        d="M21 11.0667C21 16.3499 16.5222 20.6334 11 20.6334C10.3507 20.6343 9.70324 20.5742 9.06542 20.4545C8.60633 20.3682 8.37678 20.3251 8.21653 20.3496C8.05627 20.3741 7.82918 20.4948 7.37499 20.7364C6.09014 21.4197 4.59195 21.661 3.15111 21.393C3.69874 20.7194 4.07275 19.9112 4.23778 19.0448C4.33778 18.5148 4.09 18 3.71889 17.6231C2.03333 15.9115 1 13.6051 1 11.0667C1 5.78357 5.47778 1.5 11 1.5C16.5222 1.5 21 5.78357 21 11.0667Z"
+                        stroke="#0059B2" stroke-opacity="0.5" stroke-width="1.5" stroke-linejoin="round" />
+                    <path d="M10.9955 11.5H11.0045M14.991 11.5H15M7 11.5H7.00897" stroke="#0059B2" stroke-opacity="0.5"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="text-xs font-bold text-[#0059B2]">Chat</span>
+            </button>
+
+            <button
+                class="flex opacity-50 hover:opacity-100 flex-col items-center space-y-1 text-gray-400 hover:text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                    <path
+                        d="M3.75 19.2503V21.5C3.75 22.9001 3.75 23.5997 4.02248 24.1345C4.26217 24.6049 4.64434 24.9881 5.11475 25.2278C5.649 25.5 6.34874 25.5 7.74614 25.5H26.2502M3.75 19.2503V6.75M3.75 19.2503L8.56675 15.2363L8.57073 15.2331C9.44208 14.507 9.8786 14.1432 10.3519 13.9955C10.9111 13.8209 11.5134 13.8485 12.0544 14.073C12.5131 14.2633 12.9153 14.6655 13.7197 15.4699L13.7278 15.4779C14.5446 16.2948 14.9542 16.7043 15.4202 16.8942C15.9717 17.1188 16.5857 17.1382 17.1509 16.9507C17.6301 16.7918 18.0678 16.4094 18.9429 15.6437L26.25 9.25"
+                        stroke="#0059B2" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span class="text-xs font-bold text-[#0059B2]">Dashboard</span>
+            </button>
+        </div>
+    </footer>
 </body>
 
 </html>

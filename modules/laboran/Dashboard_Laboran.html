@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen pb-28">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white px-4 py-6 rounded-b-3xl shadow relative">
+    <div class="flex justify-between items-center">
+      <h1 class="text-xl font-bold">Dashboard</h1>
+      <i data-feather="bell" class="w-5 h-5"></i>
+    </div>
+  </header>
+
+  <!-- Peminjaman Alat -->
+  <section class="px-4 mt-4">
+    <h2 class="font-semibold text-lg mb-2">Peminjaman Alat</h2>
+    <div class="bg-white rounded-lg shadow p-4 text-sm">
+      <div class="flex justify-between mb-2">
+        <span class="bg-blue-600 text-white px-3 py-1 rounded-full">Dipinjam: 12</span>
+        <span class="bg-green-600 text-white px-3 py-1 rounded-full">Tersedia: 5</span>
+      </div>
+      <div class="w-full flex justify-center my-2">
+        <img src="../../assets/img/chart.png" alt="chart" class="w-32 h-32 object-contain" />
+
+      </div>
+      <div class="flex justify-between">
+        <span class="bg-red-600 text-white px-3 py-1 rounded-full">Rusak: 3</span>
+        <span class="bg-gray-300 text-black px-3 py-1 rounded-full">Total: 20</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Laporan Kerusakan -->
+  <section class="px-4 mt-4">
+    <h2 class="font-semibold text-lg mb-2">Laporan Kerusakan</h2>
+    <div class="bg-white rounded-lg shadow overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead class="bg-blue-100 text-blue-800">
+          <tr>
+            <th class="px-3 py-2 text-left">ID</th>
+            <th class="px-3 py-2 text-left">Nama Alat</th>
+            <th class="px-3 py-2 text-left">Catatan</th>
+            <th class="px-3 py-2 text-left">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="px-3 py-2">ALT-045</td>
+            <td class="px-3 py-2">Keyboard</td>
+            <td class="px-3 py-2">Beberapa tombol rusak</td>
+            <td class="px-3 py-2 text-green-600 font-semibold">Selesai</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-3 py-2">ALT-046</td>
+            <td class="px-3 py-2">Projector</td>
+            <td class="px-3 py-2">Tidak berfungsi</td>
+            <td class="px-3 py-2 text-blue-600 font-semibold">On Progress</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-3 py-2">ALT-047</td>
+            <td class="px-3 py-2">Mouse</td>
+            <td class="px-3 py-2">Tidak terhubung</td>
+            <td class="px-3 py-2 text-green-600 font-semibold">Selesai</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-3 py-2">ALT-048</td>
+            <td class="px-3 py-2">Monitor</td>
+            <td class="px-3 py-2">Layar hitam</td>
+            <td class="px-3 py-2 text-green-600 font-semibold">Selesai</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-3 py-2">ALT-049</td>
+            <td class="px-3 py-2">PC</td>
+            <td class="px-3 py-2">Suara fan keras</td>
+            <td class="px-3 py-2 text-blue-600 font-semibold">On Progress</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Ringkasan Peminjaman -->
+  <section class="px-4 mt-4 mb-28">
+    <h2 class="font-semibold text-lg mb-2">Ringkasan Peminjaman</h2>
+    <div class="bg-white rounded-lg shadow overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead class="bg-blue-100 text-blue-800">
+          <tr>
+            <th class="px-3 py-2 text-left">ID</th>
+            <th class="px-3 py-2 text-left">Nama Alat</th>
+            <th class="px-3 py-2 text-left">Peminjam</th>
+            <th class="px-3 py-2 text-left">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="px-3 py-2">ALT-050</td>
+            <td class="px-3 py-2">Keyboard</td>
+            <td class="px-3 py-2">235150401111016</td>
+            <td class="px-3 py-2 text-green-600 font-semibold">Selesai</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-3 py-2">ALT-051</td>
+            <td class="px-3 py-2">Projector</td>
+            <td class="px-3 py-2">235150401111016</td>
+            <td class="px-3 py-2 text-blue-600 font-semibold">Dipinjam</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-3 py-2">ALT-052</td>
+            <td class="px-3 py-2">Mouse</td>
+            <td class="px-3 py-2">235150401111016</td>
+            <td class="px-3 py-2 text-green-600 font-semibold">Selesai</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-3 py-2">ALT-053</td>
+            <td class="px-3 py-2">Monitor</td>
+            <td class="px-3 py-2">235150401111016</td>
+            <td class="px-3 py-2 text-blue-600 font-semibold">Dipinjam</td>
+          </tr>
+          <tr class="border-t">
+            <td class="px-3 py-2">ALT-054</td>
+            <td class="px-3 py-2">PC</td>
+            <td class="px-3 py-2">235150401111016</td>
+            <td class="px-3 py-2 text-blue-600 font-semibold">Dipinjam</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <footer class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-md flex justify-around py-2">
+    <a href="#" class="flex flex-col items-center text-gray-500 text-xs">
+      <i data-feather="home" class="w-5 h-5"></i>
+      Home
+    </a>
+    <a href="#" class="flex flex-col items-center text-gray-500 text-xs">
+      <i data-feather="calendar" class="w-5 h-5"></i>
+      Jadwal
+    </a>
+    <a href="#" class="flex flex-col items-center text-gray-500 text-xs">
+      <i data-feather="message-circle" class="w-5 h-5"></i>
+      Chat
+    </a>
+    <a href="#" class="flex flex-col items-center text-blue-600 text-xs font-semibold">
+      <i data-feather="bar-chart-2" class="w-5 h-5"></i>
+      Dashboard
+    </a>
+  </footer>
+
+  <!-- Feather Icon Init -->
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
