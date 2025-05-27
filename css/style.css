@@ -3,3 +3,7 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
+.active {
+    border-bottom: 2px solid blue;
+}
