@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History Peminjaman</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
+
+  <header class="bg-blue-600 text-white px-4 py-6 rounded-b-2xl shadow-md flex justify-between items-center">
+    <h1 class="text-xl font-semibold">History Peminjaman</h1>
+    <i data-feather="bell" class="w-5 h-5"></i>
+  </header>
+
+  
+  <div class="flex items-center gap-3 px-4 mt-4">
+    <div class="flex items-center bg-white border rounded-full px-4 py-3 shadow w-full">
+      <i data-feather="search" class="text-gray-400 w-5 h-5 mr-2"></i>
+      <input type="text" placeholder="Cari..." class="w-full outline-none text-sm" />
+    </div>
+    <button class="bg-white p-3 rounded-full shadow border">
+      <i data-feather="sliders" class="w-5 h-5"></i>
+    </button>
+  </div>
+
+  
+  <main class="px-4 mt-4 space-y-4 pb-28">
+
+    
+    <div class="bg-white rounded-lg shadow border p-4">
+      <p class="text-sm text-blue-700 mb-1 flex items-center gap-1">
+        <i data-feather="map-pin" class="w-4 h-4"></i> Lab Pembelajaran Gedung G G1.4
+      </p>
+      <p class="text-sm font-bold">Alat yang Dipinjam: <span class="text-gray-700">Keyboard</span></p>
+      <p class="text-sm font-semibold mt-1">Deskripsi:</p>
+      <p class="text-sm mb-3">Untuk kebutuhan praktikum</p>
+      <img src="../../assets/img/History_minjam.png" alt="Gambar Lab" class="rounded-md w-full object-cover max-h-40" />
+
+    </div>
+
+    
+    <div class="bg-white rounded-lg shadow border p-4">
+      <p class="text-sm text-blue-700 mb-1 flex items-center gap-1">
+        <i data-feather="map-pin" class="w-4 h-4"></i> Lab Pembelajaran Gedung G G1.4
+      </p>
+      <p class="text-sm font-bold">Alat yang Dipinjam: <span class="text-gray-700">Mouse</span></p>
+      <p class="text-sm font-semibold mt-1">Deskripsi:</p>
+      <p class="text-sm mb-3">Untuk kebutuhan praktikum</p>
+      <img src="../../assets/img/History_minjam.png" alt="Gambar Lab" class="rounded-md w-full object-cover max-h-40" />
+
+    </div>
+
+    
+    <div class="bg-white rounded-lg shadow border p-4">
+      <p class="text-sm text-blue-700 mb-1 flex items-center gap-1">
+        <i data-feather="map-pin" class="w-4 h-4"></i> Lab Pembelajaran Gedung G G1.4
+      </p>
+      <p class="text-sm font-bold">Alat yang Dipinjam: <span class="text-gray-700">Monitor</span></p>
+      <p class="text-sm font-semibold mt-1">Deskripsi:</p>
+      <p class="text-sm mb-3">Untuk keperluan simulasi</p>
+      <img src="../../assets/img/History_minjam.png" alt="Gambar Lab" class="rounded-md w-full object-cover max-h-40" />
+
+    </div>
+
+  </main>
+
+  
+  <button class="fixed bottom-24 right-4 bg-white border-2 border-blue-500 text-blue-500 w-12 h-12 rounded-full shadow-lg text-2xl flex items-center justify-center hover:bg-blue-500 hover:text-white transition leading-none">
+    +
+  </button>
+
+  
+  <footer class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-md flex justify-around py-2">
+    <a href="#" class="flex flex-col items-center text-blue-600 text-xs">
+      <i data-feather="home" class="w-5 h-5"></i>
+      Home
+    </a>
+    <a href="#" class="flex flex-col items-center text-blue-600 text-xs">
+      <i data-feather="calendar" class="w-5 h-5"></i>
+      Jadwal
+    </a>
+    <a href="#" class="flex flex-col items-center text-blue-600 text-xs">
+      <i data-feather="message-circle" class="w-5 h-5"></i>
+      Chat
+    </a>
+    <a href="#" class="flex flex-col items-center text-blue-600 text-xs font-semibold">
+      <i data-feather="bar-chart-2" class="w-5 h-5"></i>
+      Dashboard
+    </a>
+  </footer>
+
+  
+  <script>
+    feather.replace();
+  </script>
+
+</body>
+</html>
