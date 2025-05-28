@@ -5,34 +5,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Praktikum App</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" href="" />
+    <script defer>
+        function openModal() {
+            document.getElementById('joinModal').classList.remove('hidden');
+        }
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        poppins: ['Poppins', 'sans-serif'],
-                    }
-                }
+        function closeModal() {
+            document.getElementById('joinModal').classList.add('hidden');
+        }
+
+        window.onclick = function (event) {
+            const modal = document.getElementById('joinModal');
+            if (event.target == modal) {
+                modal.classList.add('hidden');
             }
         }
     </script>
 </head>
 
-<body class="mx-auto w-[402px] h-[100vh] bg-gray-50 font-poppins">
+<body class="mx-auto w-[402px] h-[100vh] bg-gray-50">
     <div class="flex items-center justify-between mb-5">
-        <header
-            class="w-full h-[110px] relative bg-[#5580D6] rounded-b-[30px] flex items-center justify-between px-6">
-            <a href="#" class="flex items-center gap-4 text-white">
-                <i onclick="window.location.href='Homepage.html'" class="bi bi-arrow-left text-2xl"></i>
-                <h1 class="text-xl font-semibold">Kelas</h1>
-            </a>
-        </header>
+        <section class="w-full h-[126px] relative bg-[#5580D6] rounded-b-[20%]">
+            <div class="absolute bottom-10 left-10 text-xl font-semibold text-white w-[80%]">
+                <div class="flex items-center justify-between gap-4 ">
+                    <a href="./Homepage.html" class="flex items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <path
+                                d="M16.9421 20.4204L9.73738 13.1001C9.57937 12.9404 9.49074 12.7248 9.49074 12.5001C9.49074 12.2755 9.57937 12.0599 9.73738 11.9001L16.9405 4.57982C17.0984 4.41911 17.1869 4.2028 17.1869 3.97748C17.1869 3.75215 17.0984 3.53584 16.9405 3.37513C16.8634 3.29599 16.7711 3.2331 16.6693 3.19016C16.5675 3.14721 16.4581 3.12509 16.3475 3.12509C16.237 3.12509 16.1276 3.14721 16.0258 3.19016C15.9239 3.2331 15.8317 3.29599 15.7546 3.37513L8.55144 10.6939C8.07812 11.1759 7.81293 11.8245 7.81293 12.5001C7.81293 13.1757 8.07812 13.8243 8.55144 14.3064L15.7546 21.6251C15.8317 21.7045 15.9241 21.7676 16.026 21.8107C16.128 21.8538 16.2376 21.876 16.3483 21.876C16.459 21.876 16.5686 21.8538 16.6706 21.8107C16.7726 21.7676 16.8649 21.7045 16.9421 21.6251C17.1 21.4644 17.1885 21.2481 17.1885 21.0228C17.1885 20.7975 17.1 20.5812 16.9421 20.4204Z"
+                                fill="#FAFAFA" />
+                        </svg>
+                        <p class="font-bold">Kelas</p>
+                    </a>
+                    <button onclick="openModal()"
+                        class="p-2 bg-white rounded-lg border border-[#0036A1]  text-[#0036A1] text-sm">Join
+                        Kelas</button>
+                </div>
+            </div>
+        </section>
     </div>
 
     <div class="flex justify-center">
@@ -53,8 +67,8 @@
                     <img src="../../assets/img/praktikan/kelas/jokowi.jpg" alt="gambar" class="w-20 h-20 rounded-lg">
                     <div class="flex justify-between w-full items-center">
                         <h2 class="text-black font-semibold text-xs">Abdul Aziz Wirayudha S.T, M.T</h2>
-                        <button onclick="window.location.href='KelasPreview.html'"
-                            class="text-white px-4 rounded-md py-1 bg-[#0041C2] font-semibold text-xs mr-6 -translate-y-2">Detail</button>
+                        <a
+                            class="text-white px-4 rounded-md py-1 bg-[#0041C2] font-semibold text-xs mr-6 -translate-y-2">Detail</a>
                     </div>
                 </div>
             </div>
@@ -78,8 +92,8 @@
                     <img src="../../assets/img/praktikan/kelas/jokowi.jpg" alt="gambar" class="w-20 h-20 rounded-lg">
                     <div class="flex justify-between w-full items-center">
                         <h2 class="text-black font-semibold text-xs">Rhendy Saragih S.Kom, M.Kom</h2>
-                        <button onclick="window.location.href='KelasPreview.html'"
-                            class="text-white px-4 rounded-md py-1 bg-[#0041C2] font-semibold text-xs mr-6 -translate-y-2">Detail</button>
+                        <a
+                            class="text-white px-4 rounded-md py-1 bg-[#0041C2] font-semibold text-xs mr-6 -translate-y-2">Detail</a>
                     </div>
                 </div>
             </div>
@@ -103,16 +117,30 @@
                     <img src="../../assets/img/praktikan/kelas/jokowi.jpg" alt="gambar" class="w-20 h-20 rounded-lg">
                     <div class="flex justify-between w-full items-center">
                         <h2 class="text-black font-semibold text-xs">Suprapto S.pd M.pd P.dd</h2>
-                        <button onclick="window.location.href='KelasPreview.html'"
-                            class="text-white px-4 rounded-md py-1 bg-[#0041C2] font-semibold text-xs mr-6 -translate-y-2">Detail</button>
+                        <a
+                            class="text-white px-4 rounded-md py-1 bg-[#0041C2] font-semibold text-xs mr-6 -translate-y-2">Detail</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-
+    <div id="joinModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white rounded-lg shadow-xl w-11/12 max-w-md p-6 relative">
+            <button onclick="closeModal()"
+                class="absolute top-2 right-4 text-gray-500 hover:text-red-500 text-xl">x</button>
+            <h2 class="text-xl font-bold mb-4">Pilihan</h2>
+            <p class="font-semibold text-[#5D5D5D]">Kode Enroll (Praktikan)</p>
+            <input type="text" placeholder="Masukkan kode enroll"
+                class="w-full border border-gray-300 rounded-lg px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <p class="font-semibold text-[#5D5D5D]">Kode Enroll (Asisten Praktikum)</p>
+            <input type="text" placeholder="Masukkan kode enroll"
+                class="w-full border border-gray-300 rounded-lg px-3 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <div class="flex justify-end">
+                <button onclick="closeModal()" class="bg-[#0036A1] w-full text-white px-4 py-2 rounded-lg hover:bg-blue-600">Enroll</button>
+            </div>
+        </div>
+    </div>
 
     <footer
         class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[402px] bg-white border-t border-gray-200 px-6 py-3">
