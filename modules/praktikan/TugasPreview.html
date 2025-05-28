@@ -2,68 +2,75 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Praktikum App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" href="" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praktikum App</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
-<body class="mx-auto w-[402px] h-[100vh] bg-gray-50">
-    <div class="flex items-center justify-between mb-5">
-        <section class="w-full h-[126px] relative bg-[#5580D6] rounded-b-[20%]">
-            <div class="absolute bottom-10 left-10 text-xl font-semibold text-white">
-                <a href="./Tugas.html" class="flex items-center gap-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                        <path
-                            d="M16.9421 20.4204L9.73738 13.1001C9.57937 12.9404 9.49074 12.7248 9.49074 12.5001C9.49074 12.2755 9.57937 12.0599 9.73738 11.9001L16.9405 4.57982C17.0984 4.41911 17.1869 4.2028 17.1869 3.97748C17.1869 3.75215 17.0984 3.53584 16.9405 3.37513C16.8634 3.29599 16.7711 3.2331 16.6693 3.19016C16.5675 3.14721 16.4581 3.12509 16.3475 3.12509C16.237 3.12509 16.1276 3.14721 16.0258 3.19016C15.9239 3.2331 15.8317 3.29599 15.7546 3.37513L8.55144 10.6939C8.07812 11.1759 7.81293 11.8245 7.81293 12.5001C7.81293 13.1757 8.07812 13.8243 8.55144 14.3064L15.7546 21.6251C15.8317 21.7045 15.9241 21.7676 16.026 21.8107C16.128 21.8538 16.2376 21.876 16.3483 21.876C16.459 21.876 16.5686 21.8538 16.6706 21.8107C16.7726 21.7676 16.8649 21.7045 16.9421 21.6251C17.1 21.4644 17.1885 21.2481 17.1885 21.0228C17.1885 20.7975 17.1 20.5812 16.9421 20.4204Z"
-                            fill="#FAFAFA" />
-                    </svg>
-                    <p class="font-bold">Tugas Preview</p>
-                </a>
-            </div>
-        </section>
-    </div>
+<body class="mx-auto w-[402px] h-[100vh] bg-gray-50 font-poppins">
+  <div class="flex items-center justify-between mb-5">
+    <header class="w-full h-[110px] relative bg-[#5580D6] rounded-b-[30px] flex items-center justify-between px-6">
+      <a href="#" class="flex items-center gap-4 text-white">
+        <i onclick="window.location.href='KelasPreview.html'" class="bi bi-arrow-left text-2xl"></i>
+        <h1 class="text-xl font-semibold">Tugas Preview</h1>
+      </a>
+    </header>
+  </div>
 
-    <div
-        class="flex relative flex-col mx-auto w-[90%] mt-4 items-center h-[363px] p-4 rounded-xl border border-[#D4DFF4]">
-        <div class="flex justify-between  w-full ">
-            <div class="flex gap-2">
-                <img src="../../assets/img/praktikan/tugas/logotugas.png" alt="logo" class="w-10 h-10">
-                <div>
-                    <h1 class="font-bold text-sm">Modul 10: State Management</h1>
-                    <p class="text-[#A0A0A0] text-xs">Pemrograman Web</p>
-                </div>
-            </div>
-            <div class="w-10 text-xs font-semibold text-[#F00] text-end">
-                Selasa
-                23.59
-            </div>
+  <div
+    class="flex relative flex-col mx-auto w-[90%] mt-4 items-center h-[363px] p-4 rounded-xl border border-[#D4DFF4]">
+    <div class="flex justify-between  w-full ">
+      <div class="flex gap-2">
+        <img src="../../assets/img/praktikan/tugas/logotugas.png" alt="logo" class="w-10 h-10">
+        <div>
+          <h1 class="font-bold text-sm">Modul 10: State Management</h1>
+          <p class="text-[#A0A0A0] text-xs">Pemrograman Web</p>
         </div>
-        <hr class="w-full mt-4 border border-[#D4DFF4]">
-        <div class="mt-2 w-full">
-            <h2 class="font-semibold ">Deskripsi</h2>
-            <p class="text-sm">Format nama file : Pemweb-[Kelas]_Nama_NIM</p>
-        </div>
-        <div class="mt-2 w-full">
-            <h2 class="font-semibold ">Lampiran</h2>
-            <img src="../../assets/img/praktikan/tugas/pdf.png" alt="pdf" class="w-32">
-        </div>
-        <button
-            class="py-2 bg-[#0036A1] absolute flex justify-center items-center gap-2 bottom-6 w-[90%] rounded-lg text-white font-semibold text-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                <path d="M15.8371 8H9.32601V14H7.15564V8H0.644531V6H7.15564V0H9.32601V6H15.8371V8Z" fill="white" />
-            </svg>
-            <h3 class="font-semibold">
-                Tambah Tugas
-            </h3>
-        </button>
+      </div>
+      <div class="w-10 text-xs font-semibold text-[#F00] text-end">
+        Selasa
+        23.59
+      </div>
     </div>
+    <hr class="w-full mt-4 border border-[#D4DFF4]">
+    <div class="mt-2 w-full">
+      <h2 class="font-semibold ">Deskripsi</h2>
+      <p class="text-sm">Format nama file : Pemweb-[Kelas]_Nama_NIM</p>
+    </div>
+    <div class="mt-2 w-full">
+      <h2 class="font-semibold ">Lampiran</h2>
+      <img src="../../assets/img/praktikan/tugas/pdf.png" alt="pdf" class="w-32">
+    </div>
+    <button
+      class="py-2 bg-[#0036A1] absolute flex justify-center items-center gap-2 bottom-6 w-[90%] rounded-lg text-white font-semibold text-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+        <path d="M15.8371 8H9.32601V14H7.15564V8H0.644531V6H7.15564V0H9.32601V6H15.8371V8Z" fill="white" />
+      </svg>
+      <h3 class="font-semibold">
+        Tambah Tugas
+      </h3>
+    </button>
+  </div>
 
-<footer class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[402px] bg-white border-t border-gray-200 px-6 py-3">
+  <footer
+    class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[402px] bg-white border-t border-gray-200 px-6 py-3">
     <div class="flex justify-around items-center">
       <a href="./Homepage.html" class="flex flex-col items-center space-y-1 text-blue-600">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
@@ -83,7 +90,8 @@
         <span class="text-xs font-bold text-[#0059B2]">Jadwal</span>
       </a>
 
-      <button class="flex opacity-50 hover:opacity-100 flex-col items-center space-y-1 text-gray-400 hover:text-gray-600">
+      <button
+        class="flex opacity-50 hover:opacity-100 flex-col items-center space-y-1 text-gray-400 hover:text-gray-600">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
           <path
             d="M21 11.0667C21 16.3499 16.5222 20.6334 11 20.6334C10.3507 20.6343 9.70324 20.5742 9.06542 20.4545C8.60633 20.3682 8.37678 20.3251 8.21653 20.3496C8.05627 20.3741 7.82918 20.4948 7.37499 20.7364C6.09014 21.4197 4.59195 21.661 3.15111 21.393C3.69874 20.7194 4.07275 19.9112 4.23778 19.0448C4.33778 18.5148 4.09 18 3.71889 17.6231C2.03333 15.9115 1 13.6051 1 11.0667C1 5.78357 5.47778 1.5 11 1.5C16.5222 1.5 21 5.78357 21 11.0667Z"
@@ -94,7 +102,8 @@
         <span class="text-xs font-bold text-[#0059B2]">Chat</span>
       </button>
 
-      <button class="flex opacity-50 hover:opacity-100 flex-col items-center space-y-1 text-gray-400 hover:text-gray-600">
+      <button
+        class="flex opacity-50 hover:opacity-100 flex-col items-center space-y-1 text-gray-400 hover:text-gray-600">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
           <path
             d="M3.75 19.2503V21.5C3.75 22.9001 3.75 23.5997 4.02248 24.1345C4.26217 24.6049 4.64434 24.9881 5.11475 25.2278C5.649 25.5 6.34874 25.5 7.74614 25.5H26.2502M3.75 19.2503V6.75M3.75 19.2503L8.56675 15.2363L8.57073 15.2331C9.44208 14.507 9.8786 14.1432 10.3519 13.9955C10.9111 13.8209 11.5134 13.8485 12.0544 14.073C12.5131 14.2633 12.9153 14.6655 13.7197 15.4699L13.7278 15.4779C14.5446 16.2948 14.9542 16.7043 15.4202 16.8942C15.9717 17.1188 16.5857 17.1382 17.1509 16.9507C17.6301 16.7918 18.0678 16.4094 18.9429 15.6437L26.25 9.25"

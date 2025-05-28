@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Peminjaman</title>
+    <link rel="stylesheet" href="../../../css/style.css" />
+  </head>
+  <body class="mx-auto w-[402px] h-[100vh] bg-gray-50">
+    <div class="flex items-center justify-between mb-5">
+      <section class="w-full h-[126px] relative bg-[#5580D6] rounded-b-[20%]">
+        <div
+          class="absolute bottom-10 left-10 text-xl font-semibold text-white"
+        >
+          <a href="../Homepage.html" class="flex items-center gap-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <path
+                d="M16.9421 20.4204L9.73738 13.1001C9.57937 12.9404 9.49074 12.7248 9.49074 12.5001C9.49074 12.2755 9.57937 12.0599 9.73738 11.9001L16.9405 4.57982C17.0984 4.41911 17.1869 4.2028 17.1869 3.97748C17.1869 3.75215 17.0984 3.53584 16.9405 3.37513C16.8634 3.29599 16.7711 3.2331 16.6693 3.19016C16.5675 3.14721 16.4581 3.12509 16.3475 3.12509C16.237 3.12509 16.1276 3.14721 16.0258 3.19016C15.9239 3.2331 15.8317 3.29599 15.7546 3.37513L8.55144 10.6939C8.07812 11.1759 7.81293 11.8245 7.81293 12.5001C7.81293 13.1757 8.07812 13.8243 8.55144 14.3064L15.7546 21.6251C15.8317 21.7045 15.9241 21.7676 16.026 21.8107C16.128 21.8538 16.2376 21.876 16.3483 21.876C16.459 21.876 16.5686 21.8538 16.6706 21.8107C16.7726 21.7676 16.8649 21.7045 16.9421 21.6251C17.1 21.4644 17.1885 21.2481 17.1885 21.0228C17.1885 20.7975 17.1 20.5812 16.9421 20.4204Z"
+                fill="#FAFAFA"
+              />
+            </svg>
+            <p class="font-bold">Peminjaman</p>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Daftar Peminjaman -->
+    <div
+      class="flex flex-col mx-auto w-[90%] mt-4 items-start p-4 rounded-xl border border-[#D4DFF4] bg-white"
+    >
+      <h1 class="font-bold text-sm">Speaker Portable</h1>
+      <div class="mt-2 w-full">
+        <div class="flex items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+            />
+          </svg>
+          <p class="text-xs text-[#A0A0A0] font-semibold">Senin, 18 Mei 2023</p>
+        </div>
+        <p class="text-xs text-[#A0A0A0] mt-1">Peminjam: Budiyono Siregar</p>
+      </div>
+      <div class="flex justify-between mt-4 w-full">
+        <div class="flex items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 text-green-500"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+          <span class="text-green-500 text-xs">Dikembalikan</span>
+        </div>
+        <button
+          class="text-white bg-[#0036A1] py-2 px-4 rounded-md text-xs font-semibold"
+        >
+          Lihat Detail
+        </button>
+      </div>
+    </div>
+
+    <!-- Card Peminjaman dengan Update Status -->
+    <div
+      class="flex flex-col mx-auto w-[90%] mt-4 items-start p-4 rounded-xl border border-[#D4DFF4] bg-white"
+    >
+      <h1 class="font-bold text-sm">Kabel LAN</h1>
+      <div class="mt-2 w-full">
+        <div class="flex items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+            />
+          </svg>
+          <p class="text-xs text-[#A0A0A0] font-semibold">Senin, 18 Mei 2023</p>
+        </div>
+        <p class="text-xs text-[#A0A0A0] mt-1">Peminjam: Budiyono Siregar</p>
+      </div>
+      <div class="flex justify-between mt-4 w-full">
+        <div class="flex items-center gap-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 text-gray-500"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+            />
+          </svg>
+          <span class="text-gray-500 text-xs">Dipinjam</span>
+        </div>
+        <div>
+          <button
+            id="updateStatusButton"
+            class="text-[#0036A1] bg-white border border-[#0036A1] py-2 px-4 rounded-md text-xs font-semibold"
+          >
+            Update Status
+          </button>
+          <button
+            class="bg-[#0036A1] text-white py-2 px-4 rounded-md text-xs font-semibold"
+          >
+            Lihat Detail
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add New Peminjaman Button -->
+    <div class="flex justify-center mt-6 mx-auto w-full">
+      <button
+        id="openModal"
+        class="bg-white border border-gray-400 text-[#5D5D5D] py-3 flex justify-center items-center gap-2 w-[90%] rounded-full text-sm font-semibold"
+      >
+        Tambah Peminjaman Baru
+      </button>
+    </div>
+
+    <!-- Modal for Peminjaman -->
+    <div
+      id="modal"
+      class="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center hidden"
+    >
+      <div class="bg-white p-6 rounded-lg w-[90%] max-w-[400px]">
+        <h2 class="text-lg font-semibold text-left mb-4">Form Peminjaman</h2>
+        <form>
+          <div class="mb-4">
+            <label
+              for="namaAlat"
+              class="block text-sm font-medium text-gray-700"
+              >Nama Peminjaman</label
+            >
+            <input
+              type="text"
+              id="namaAlat"
+              name="namaAlat"
+              class="mt-1 p-2 w-full border rounded-md"
+              placeholder="masukkan nama alat"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="namaPeminjam"
+              class="block text-sm font-medium text-gray-700"
+              >Nama Peminjam</label
+            >
+            <input
+              type="text"
+              id="namaPeminjam"
+              name="namaPeminjam"
+              class="mt-1 p-2 w-full border rounded-md"
+              placeholder="masukkan nama peminjam"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="tglPeminjaman"
+              class="block text-sm font-medium text-gray-700"
+              >Tanggal Peminjaman</label
+            >
+            <input
+              type="date"
+              id="tglPeminjaman"
+              name="tglPeminjaman"
+              class="mt-1 p-2 w-full border rounded-md"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="tglPengembalian"
+              class="block text-sm font-medium text-gray-700"
+              >Tanggal Pengembalian</label
+            >
+            <input
+              type="date"
+              id="tglPengembalian"
+              name="tglPengembalian"
+              class="mt-1 p-2 w-full border rounded-md"
+            />
+          </div>
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              class="bg-[#5580D6] text-white py-2 px-4 rounded-md"
+            >
+              Ajukan Peminjaman
+            </button>
+          </div>
+        </form>
+        <div class="mt-4 text-center">
+          <button id="closeModal" class="text-sm text-[#A0A0A0]">Tutup</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Peminjaman -->
+    <div
+      id="UpdateStatus"
+      class="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center hidden"
+    >
+      <div class="bg-white p-6 rounded-lg w-[90%] max-w-[400px]">
+        <h2 class="text-lg font-semibold text-left mb-4">Form Pengembalian</h2>
+        <form>
+          <div class="mb-4">
+            <label
+              for="namaAlat"
+              class="block text-sm font-medium text-gray-700"
+              >Nama Peminjaman</label
+            >
+            <input
+              type="text"
+              id="namaAlat"
+              name="namaAlat"
+              class="mt-1 p-2 w-full border rounded-md"
+              placeholder="masukkan nama alat"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="namaPeminjam"
+              class="block text-sm font-medium text-gray-700"
+              >Nama Peminjam</label
+            >
+            <input
+              type="text"
+              id="namaPeminjam"
+              name="namaPeminjam"
+              class="mt-1 p-2 w-full border rounded-md"
+              placeholder="masukkan nama peminjam"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="tglPeminjaman"
+              class="block text-sm font-medium text-gray-700"
+              >Tanggal Peminjaman</label
+            >
+            <input
+              type="date"
+              id="tglPeminjaman"
+              name="tglPeminjaman"
+              class="mt-1 p-2 w-full border rounded-md"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="tglPengembalian"
+              class="block text-sm font-medium text-gray-700"
+              >Tanggal Pengembalian</label
+            >
+            <input
+              type="date"
+              id="tglPengembalian"
+              name="tglPengembalian"
+              class="mt-1 p-2 w-full border rounded-md"
+            />
+          </div>
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              class="bg-[#5580D6] text-white py-2 px-4 rounded-md"
+            >
+              Kembalikan
+            </button>
+          </div>
+        </form>
+        <div class="mt-4 text-center">
+          <button id="closeUpdate" class="text-sm text-[#A0A0A0]">Tutup</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../../js/peminjaman.js"></script>
+  </body>
+</html>
