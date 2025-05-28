@@ -1,4 +1,4 @@
-// JavaScript to handle modal open and close
+// JavaScript to handle modal open and
 const openModalButton = document.getElementById("openModal");
 const modal = document.getElementById("modal");
 const closeModalButton = document.getElementById("closeModal");
