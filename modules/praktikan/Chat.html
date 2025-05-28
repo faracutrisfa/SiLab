@@ -7,14 +7,29 @@
     <title>Praktikum App</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" href="" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body class="mx-auto w-[402px] h-[100vh] bg-gray-50">
+<body class="mx-auto w-[402px] h-[100vh] bg-gray-50 font-poppins">
     <div class="flex items-center justify-between mb-5">
         <header class="w-full h-[110px] relative bg-[#5580D6] rounded-b-[30px] flex items-center justify-between px-6 mb-5">
         <a href="#" class="flex items-center gap-4 text-white">
@@ -26,7 +41,7 @@
     </header>
     </div>
 
-    <div class="flex justify-between items-center px-5 mb-8 gap-5">
+    <a href="./ChatPreview.html" class="flex justify-between items-center px-5 mb-8 gap-5">
         <img src="../../assets/img/praktikan/chat/chat1.png" alt="gambar" class="w-16 h-16 rounded-2xl border border-[#D4DFF4]">
         <div class="flex flex-col">
             <p class="font-semibold text-xl">PemWeb - A</p>
@@ -36,7 +51,8 @@
             <p class="text-gray-400 text-xs whitespace-nowrap">07:11 PM</p>
             <button class="rounded-lg text-white bg-[#2A60CC] text-sm h-7 w-8">16</button>
         </div>
-    </div>
+    </a>
+
     <div class="flex justify-between items-center px-5 mb-8 gap-5">
         <img src="../../assets/img/praktikan/chat/chat2.png" alt="gambar" class="w-16 h-16 rounded-2xl border border-[#D4DFF4]">
         <div class="flex flex-col">
@@ -48,6 +64,7 @@
             <button class="rounded-lg text-white bg-[#2A60CC] text-sm h-7 w-8">1</button>
         </div>
     </div>
+
     <div class="flex justify-between items-center px-5 mb-8 gap-5">
         <img src="../../assets/img/praktikan/chat/chat3.png" alt="gambar" class="w-16 h-16 rounded-2xl border border-[#D4DFF4]">
         <div class="flex flex-col">
