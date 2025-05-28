@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelaporan Kerusakan - Step 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="mx-auto w-[402px] min-h-screen bg-gray-50 font-sora relative pb-32">
+    <!-- Header with Back Button -->
+    <div class="pt-8 px-6 mt-4">
+        <a href="./Pelaporan2.html" class="flex items-center gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 25 25" fill="none">
+            <path
+                d="M16.9421 20.4204L9.73738 13.1001C9.57937 12.9404 9.49074 12.7248 9.49074 12.5001C9.49074 12.2755 9.57937 12.0599 9.73738 11.9001L16.9405 4.57982C17.0984 4.41911 17.1869 4.2028 17.1869 3.97748C17.1869 3.75215 17.0984 3.53584 16.9405 3.37513C16.8634 3.29599 16.7711 3.2331 16.6693 3.19016C16.5675 3.14721 16.4581 3.12509 16.3475 3.12509C16.237 3.12509 16.1276 3.14721 16.0258 3.19016C15.9239 3.2331 15.8317 3.29599 15.7546 3.37513L8.55144 10.6939C8.07812 11.1759 7.81293 11.8245 7.81293 12.5001C7.81293 13.1757 8.07812 13.8243 8.55144 14.3064L15.7546 21.6251C15.8317 21.7045 15.9241 21.7676 16.026 21.8107C16.128 21.8538 16.2376 21.876 16.3483 21.876C16.459 21.876 16.5686 21.8538 16.6706 21.8107C16.7726 21.7676 16.8649 21.7045 16.9421 21.6251C17.1 21.4644 17.1885 21.2481 17.1885 21.0228C17.1885 20.7975 17.1 20.5812 16.9421 20.4204Z"
+                fill="#5580D6" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- Step Indicator with Progress Bar -->
+    <div class="px-8 mt-10">
+        <div class="flex justify-between items-center relative">
+            <!-- Progress Bar Background -->
+            <div class="absolute h-1 bg-[#D4DFF4] left-[12%] right-[12%] top-5 -z-10"></div>
+
+            <!-- Step 1 -->
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-[#5580D6] text-white rounded-full flex items-center justify-center font-bold text-xl mb-2">
+                    1
+                </div>
+                <p class="text-sm font-medium text-[#5580D6]">Tulis Laporan</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-[#D4DFF4] text-[#FFFFFF] rounded-full flex items-center justify-center font-bold text-xl mb-2">
+                    2
+                </div>
+                <p class="text-sm font-medium text-[#D4DFF4]">Pilih Bukti</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-[#D4DFF4] text-[#FFFFFF] rounded-full flex items-center justify-center font-bold text-xl mb-2">
+                    3
+                </div>
+                <p class="text-sm font-medium text-[#D4DFF4]">Pratinjau</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Curved Divider after Step Indicator -->
+    <div class="mt-8">
+        <div class="h-px bg-gray-200 mb-8"></div>
+    </div>
+
+    <!-- Form Content -->
+    <div class="mx-4 mt-4">
+        <div class="bg-white shadow-sm border border-[#D4DFF4] rounded-2xl p-4 h-[calc(77vh-200px)] overflow-y-auto">
+            <!-- Lokasi yang dilaporkan -->
+            <h2 class="text-lg font-medium text-gray-800 mb-2">Lokasi yang dilaporkan</h2>
+            <div class="flex items-center border border-transparent rounded-lg p-2 mb-6">
+                <i class="fas fa-map-marker-alt text-[#5580D6] mr-3 -mx-2"></i>
+                <input type="text" placeholder="Tambahkan Detail..." class="w-full text-sm text-gray-500 focus:outline-none bg-transparent">
+            </div>
+
+            <div class="h-20"></div> 
+
+            <!-- Jenis alat yang rusak -->
+            <h2 class="text-lg font-medium text-gray-800 mb-4">Jenis alat yang rusak</h2>
+            <div class="flex items-center border border-transparent rounded-lg p-3">
+                <input type="text" placeholder="Tambahkan Detail..." class="w-full text-sm text-gray-500 focus:outline-none bg-transparent -mx-3">
+            </div>
+
+            <div class="h-6"></div> 
+        </div>
+    </div>
+
+    <!-- Bottom Section with Equal Spacing -->
+    <div class="fixed bottom-0 left-0 right-0">
+        <!-- Top Divider -->
+        <div class="h-px bg-gray-200 mb-8"></div>
+
+        <!-- Button -->
+        <div class="mx-6 mb-8">
+            <button type="button" onclick="window.location.href='./Pelaporan4.html'" class="w-full py-4 bg-[#5580D6] text-white font-bold rounded-xl transition-all hover:bg-[#4B6FBA] active:bg-[#406099] shadow-lg">
+            LANJUT
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
