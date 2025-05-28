@@ -24,3 +24,18 @@ tugasTab.addEventListener("click", function () {
   tugasContent.classList.remove("hidden");
   modulContent.classList.add("hidden");
 });
+
+function openModal() {
+  document.getElementById('joinModal').classList.remove('hidden');
+}
+
+function closeModal() {
+  document.getElementById('joinModal').classList.add('hidden');
+}
+
+window.onclick = function (event) {
+  const modal = document.getElementById('joinModal');
+  if (event.target == modal) {
+    modal.classList.add('hidden');
+  }
+}
