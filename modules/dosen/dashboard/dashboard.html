@@ -9,54 +9,28 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <style></style>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body class="mx-auto w-[402px] h-[100vh]">
+  <body class="mx-auto w-[402px] h-[100vh] font-poppins">
     <!-- Header -->
-    <div class="flex items-center justify-between mb-5 flex-nowrap">
-      <section class="w-full h-[126px] relative bg-[#5580D6] rounded-b-[20%]">
-        <div
-          class="absolute bottom-10 left-10 text-lg font-semibold text-white"
-        >
-          <a href="./Homepage.html" class="flex items-center gap-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              fill="none"
-            >
-              <path
-                d="M16.9421 20.4204L9.73738 13.1001C9.57937 12.9404 9.49074 12.7248 9.49074 12.5001C9.49074 12.2755 9.57937 12.0599 9.73738 11.9001L16.9405 4.57982C17.0984 4.41911 17.1869 4.2028 17.1869 3.97748C17.1869 3.75215 17.0984 3.53584 16.9405 3.37513C16.8634 3.29599 16.7711 3.2331 16.6693 3.19016C16.5675 3.14721 16.4581 3.12509 16.3475 3.12509C16.237 3.12509 16.1276 3.14721 16.0258 3.19016C15.9239 3.2331 15.8317 3.29599 15.7546 3.37513L8.55144 10.6939C8.07812 11.1759 7.81293 11.8245 7.81293 12.5001C7.81293 13.1757 8.07812 13.8243 8.55144 14.3064L15.7546 21.6251C15.8317 21.7045 15.9241 21.7676 16.026 21.8107C16.128 21.8538 16.2376 21.876 16.3483 21.876C16.459 21.876 16.5686 21.8538 16.6706 21.8107C16.7726 21.7676 16.8649 21.7045 16.9421 21.6251C17.1 21.4644 17.1885 21.2481 17.1885 21.0228C17.1885 20.7975 17.1 20.5812 16.9421 20.4204Z"
-                fill="#FAFAFA"
-              />
-            </svg>
-            <p class="font-bold">Dashboard Pemantauan</p>
-          </a>
-          </div>
-          <div class="absolute bottom-10 right-10">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="white"
-              width="28"
-              height="28"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
-    </div>
+    <header
+      class="w-full h-[110px] relative bg-[#5580D6] rounded-b-[30px] flex items-center justify-between px-6 mb-5 pt-5"
+    >
+      <i class="bi bi-chevron-left text-white"></i>
+      <a href="#" class="flex items-center gap-4 text-white">
+        <h1 class="text-xl font-bold">Dashboard Pemantauan</h1>
+      </a>
+      <button class="relative text-white">
+        <i class="bi bi-bell-fill text-2xl"></i>
+      </button>
+    </header>
+
     <!-- Main Content -->
     <main class="flex-grow px-4 space-y-6 overflow-y-auto pb-24">
       <!-- List Kelas -->
       <div class="relative">
         <select
-          class="w-full p-3 border border-[#5580D6] rounded-[10px] shadow-sm appearance-none focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-[#5580D6] bg-white text-[#5580D6]"
+          class="w-full p-3 border border-[#5580D6] rounded-[10px] shadow-sm appearance-none focus:ring-blue-500 focus:border-transparent outline-[#5580D6] bg-white text-[#5580D6]"
         >
           <option>Pemrograman Web - A</option>
           <option>Pemrograman Web - B</option>
@@ -70,43 +44,62 @@
       </div>
 
       <!-- Ringkasan Kelas -->
-     <div class="bg-white p-5 rounded-xl border-2 border-[#D4DFF4] space-y-4">
-  <h2 class="text-md font-semibold text-[#5580D6]">Ringkasan Kelas</h2>
-  <div class="border-t-2 border-[#5580D6] mt-1"></div>
-  <div class="flex flex-col sm:flex-row items-center sm:items-start sm:space-x-6 space-y-4 sm:space-y-0">
-    
-    <!-- SVG Progress Besar -->
-    <div class="relative w-40 h-40 sm:w-44 sm:h-44">
-      <svg class="w-full h-full" viewBox="0 0 100 100">
-        <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40" fill="transparent"></circle>
-        <circle class="text-green-500 stroke-current" stroke-width="10" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent" stroke-dasharray="251.2" stroke-dashoffset="calc(251.2 - (251.2 * 93) / 100)"></circle>
-        <text x="50" y="50" font-size="20" text-anchor="middle" alignment-baseline="middle" fill="#10B981" class="font-semibold">93%</text>
-        <text x="50" y="65" font-size="7" text-anchor="middle" alignment-baseline="middle" fill="#6B7280">Progress</text>
-        <text x="50" y="73" font-size="7" text-anchor="middle" alignment-baseline="middle" fill="#6B7280">Rata-rata</text>
-      </svg>
-    </div>
+      <div
+        class="mt-8 bg-white p-5 rounded-xl border-2 border-[#D4DFF4] space-y-4"
+      >
+        <h3 class="text-md font-semibold text-[#5580D6]">Ringkasan Kelas</h3>
+        <div class="border-t-2 border-[#5580D6] mt-1"></div>
 
-    <!-- Bagian kanan diperkecil -->
-    <div class="flex-1 space-y-3 w-full text-sm">
-      <!-- Keaktifan Mingguan -->
-      <div class="p-3 rounded-lg">
-        <p class="font-semibold text-black">Keaktifan Mingguan</p>
-        <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
-          <div class="bg-[#5580D6] h-2 rounded-full" style="width: 80%"></div>
-        </div>
-        <p class="text-base font-semibold text-gray-700 mt-1">8/10</p>
-      </div>
+        <div
+          class="flex flex-col sm:flex-row items-center sm:items-center sm:space-x-6 space-y-4 sm:space-y-0"
+        >
+          <div
+            class="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-gray-200 overflow-hidden"
+          >
+            <div
+              class="absolute top-0 right-0 w-1/2 h-1/2 bg-[#0D800D] rounded-tr-full"
+            ></div>
+            <div
+              class="absolute bottom-0 right-0 w-1/2 h-1/2 bg-[#0D800D] rounded-br-full"
+            ></div>
+            <div
+              class="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[#0D800D] rounded-bl-full"
+            ></div>
 
-      <!-- Keterlambatan -->
-      <div class="w-36 p-3 rounded-lg border-2 border-[#D4DFF4] mx-auto text-center">
-        <p class="font-semibold text-black">Keterlambatan</p>
-        <div class="w-20 bg-[#5580D6] rounded-lg mx-auto mt-1">
-          <p class="text-base font-semibold text-white">2 Tugas</p>
+            <div
+              class="absolute inset-[10px] sm:inset-[11px] rounded-full bg-white flex flex-col items-center justify-center text-center z-10"
+            >
+              <p class="font-semibold text-black text-xl leading-none pt-6">
+                75%
+              </p>
+              <p class="pt-1 text-gray-500 text-sm leading-tight">Progress</p>
+              <p class="text-gray-500 text-sm leading-tight pb">Rata-rata</p>
+            </div>
+          </div>
+
+          <div class="flex-1 space-y-3 w-full text-sm">
+            <div class="p-3 rounded-lg">
+              <p class="font-semibold text-black">Keaktifan Mingguan</p>
+              <div class="w-full bg-gray-200 rounded-full h-2 mt-1">
+                <div
+                  class="bg-[#5580D6] h-2 rounded-full"
+                  style="width: 80%"
+                ></div>
+              </div>
+              <p class="text-base font-semibold text-gray-700 mt-1">8/10</p>
+            </div>
+
+            <div
+              class="w-36 p-3 rounded-lg border-2 border-[#D4DFF4] mx-auto text-center"
+            >
+              <p class="font-semibold text-black">Keterlambatan</p>
+              <div class="w-20 bg-[#5580D6] rounded-lg mx-auto mt-1">
+                <p class="text-base font-semibold text-white">2 Tugas</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
       <!-- Daftar Praktikan -->
       <div class="bg-white p-5 rounded-xl border-2 border-[#D4DFF4] space-y-4">
@@ -139,7 +132,7 @@
         </div>
 
         <div class="space-y-3 max-h-60 overflow-y-auto">
-          <a href="detail-praktikan.html"
+          <a href="DetailPraktikan.html"
             ><div
               class="flex items-center justify-between p-3 bg-white rounded-lg border-2 border-gray hover:bg-gray-100 transition-color mb-3"
             >
@@ -157,7 +150,7 @@
               <i class="bi bi-chevron-down text-[#5580D6]"></i>
             </div>
           </a>
-          <a href="detail-praktikan.html"
+          <a href="DetailPraktikan.html"
             ><div
               class="flex items-center justify-between p-3 bg-white rounded-lg border-2 border-gray hover:bg-gray-100 transition-color mb-3"
             >
@@ -175,7 +168,7 @@
               <i class="bi bi-chevron-down text-[#5580D6]"></i>
             </div>
           </a>
-          <a href="detail-praktikan.html"
+          <a href="DetailPraktikan.html"
             ><div
               class="flex items-center justify-between p-3 bg-white rounded-lg border-2 border-gray hover:bg-gray-100 transition-color mb-3"
             >

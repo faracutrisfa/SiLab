@@ -8,177 +8,212 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <style>
-        .chart-legend-item {
-            display: flex;
-            align-items: center;
-            margin-right: 16px; /* Equivalent to mr-4 */
-            font-size: 0.75rem; /* Equivalent to text-xs */
-        }
-        .chart-legend-color {
-            width: 12px; /* Equivalent to w-3 */
-            height: 12px; /* Equivalent to h-3 */
-            border-radius: 9999px; /* Equivalent to rounded-full */
-            margin-right: 4px; /* Equivalent to mr-1 */
-        }
-    </style>
+    <style></style>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body class="mx-auto w-[402px]">
-        <!-- Header -->
-    <div class="flex items-center justify-between mb-5 flex-nowrap">
-      <section class="w-full h-[126px] relative bg-[#5580D6] rounded-b-[20%]">
-        <div
-          class="absolute bottom-10 left-10 text-lg font-semibold text-white"
-        >
-          <a href="./Homepage.html" class="flex items-center gap-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              viewBox="0 0 25 25"
-              fill="none"
-            >
-              <path
-                d="M16.9421 20.4204L9.73738 13.1001C9.57937 12.9404 9.49074 12.7248 9.49074 12.5001C9.49074 12.2755 9.57937 12.0599 9.73738 11.9001L16.9405 4.57982C17.0984 4.41911 17.1869 4.2028 17.1869 3.97748C17.1869 3.75215 17.0984 3.53584 16.9405 3.37513C16.8634 3.29599 16.7711 3.2331 16.6693 3.19016C16.5675 3.14721 16.4581 3.12509 16.3475 3.12509C16.237 3.12509 16.1276 3.14721 16.0258 3.19016C15.9239 3.2331 15.8317 3.29599 15.7546 3.37513L8.55144 10.6939C8.07812 11.1759 7.81293 11.8245 7.81293 12.5001C7.81293 13.1757 8.07812 13.8243 8.55144 14.3064L15.7546 21.6251C15.8317 21.7045 15.9241 21.7676 16.026 21.8107C16.128 21.8538 16.2376 21.876 16.3483 21.876C16.459 21.876 16.5686 21.8538 16.6706 21.8107C16.7726 21.7676 16.8649 21.7045 16.9421 21.6251C17.1 21.4644 17.1885 21.2481 17.1885 21.0228C17.1885 20.7975 17.1 20.5812 16.9421 20.4204Z"
-                fill="#FAFAFA"
-              />
-            </svg>
-            <p class="font-bold">Modul Praktikum</p>
-          </a>
-          </div>
-          <div class="absolute bottom-10 right-10">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="white"
-              width="28"
-              height="28"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
-    </div>
+  <body class="mx-auto w-[402px] h-[100vh] font-poppins">
+    <!-- Header -->
+    <header
+      class="w-full h-[110px] relative bg-[#5580D6] rounded-b-[30px] flex items-center justify-between px-6 mb-5 pt-5"
+    >
+      <a href="DashboardAsprak.html" class="text-white">
+        <i class="bi bi-chevron-left text-white"></i>
+      </a>
+
+      <a href="DashboardAsprak.html" class="flex items-center gap-4 text-white">
+        <h1 class="text-xl font-bold">Detail Praktikan</h1>
+      </a>
+      <button class="relative text-white">
+        <i class="bi bi-bell-fill text-2xl"></i>
+      </button>
+    </header>
     <!-- Main Content -->
     <main class="flex-1 overflow-y-auto pb-24">
-        <!-- Nama Praktikan -->
-        <div class="py-4 px-4 text-center">
-            <div class="inline-block p-1 bg-gray-300 rounded-full mb-2">
-                 <img class="h-16 w-16 rounded-full object-cover" src="https://placehold.co/100x100/E2E8F0/A0AEC0?text=S" alt="Avatar Praktikan">
-            </div>
-            <h2 class="text-lg font-semibold text-gray-800">Nama Praktikan - NIM Praktikan</h2>
+      <!-- Nama Praktikan -->
+      <div class="py-4 px-4 text-center">
+        <div class="inline-block p-1">
+          <img
+            src="https://placehold.co/40x40/FF6347/FFFFFF?text=J"
+            alt="Avatar Joko"
+            class="w-16 h-16 rounded-full"
+          />
         </div>
+        <h2 class="text-lg font-semibold text-gray-800">
+          Joko - 235150401122313
+        </h2>
+      </div>
 
-            <div class="m-4 bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-md font-semibold text-gray-700 mb-3">NILAI PRAKTIKUM</h3>
-                <div class="h-56 bg-gray-50 rounded-md flex items-center justify-center mb-3">
-                    <img src="https://placehold.co/600x250/F3F4F6/9CA3AF?text=Grafik+Nilai+Praktikum" alt="Grafik Nilai Praktikum Placeholder" class="w-full h-full object-contain">
+      <div class="bg-white p-5 rounded-xl border-2 border-[#D4DFF4] space-y-4">
+        <h3 class="text-md font-semibold text-black mb-3">NILAI PRAKTIKUM</h3>
+        <div
+          class="h-56 bg-gray-50 rounded-md flex items-center justify-center mb-3"
+        >
+          <img
+            src="https://placehold.co/600x250/F3F4F6/9CA3AF?text=Grafik+Nilai+Praktikum"
+            alt="Grafik Nilai Praktikum Placeholder"
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <div
+          class="flex justify-center items-center space-x-4 text-xs text-gray-600"
+        >
+          <div class="chart-legend-item">
+            <span class="chart-legend-color bg-blue-500"></span> Modul
+          </div>
+          <div class="chart-legend-item">
+            <span class="chart-legend-color bg-green-500"></span> UAP
+          </div>
+          <div class="chart-legend-item">
+            <span class="chart-legend-color bg-orange-500"></span> UTP
+          </div>
+        </div>
+      </div>
 
-                </div>
-                <div class="flex justify-center items-center space-x-4 text-xs text-gray-600">
-                    <div class="chart-legend-item">
-                        <span class="chart-legend-color bg-blue-500"></span> Modul
-                    </div>
-                    <div class="chart-legend-item">
-                        <span class="chart-legend-color bg-green-500"></span> UAP
-                    </div>
-                    <div class="chart-legend-item">
-                        <span class="chart-legend-color bg-orange-500"></span> UTP
-                    </div>
-                </div>
+      <!-- ringkasan kelas -->
+      <div
+        class="mt-8 bg-white p-5 rounded-xl border-2 border-[#D4DFF4] space-y-4"
+      >
+        <h2 class="text-md font-semibold text-[#5580D6]">Ringkasan Kelas</h2>
+        <div class="border-t-2 border-[#5580D6] mt-1"></div>
+        <div
+          class="flex flex-col sm:flex-row items-center sm:items-start sm:space-x-6 space-y-4 sm:space-y-0"
+        >
+          <div
+            class="flex flex-col sm:flex-row items-center sm:items-start sm:space-x-6 space-y-4 sm:space-y-0"
+          >
+            <div
+              class="relative w-40 h-40 sm:w-44 sm:h-44 rounded-full bg-gray-200 overflow-hidden"
+            >
+              <div
+                class="absolute top-0 right-0 w-1/2 h-1/2 bg-[#0D800D] rounded-tr-full"
+              ></div>
+              <div
+                class="absolute bottom-0 right-0 w-1/2 h-1/2 bg-[#0D800D] rounded-br-full"
+              ></div>
+              <div
+                class="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[#0D800D] rounded-bl-full"
+              ></div>
+
+              <div
+                class="absolute inset-[15px] sm:inset-[15px] rounded-full bg-white flex items-center justify-center text-center z-10"
+              >
+                <p class="font-semibold text-black text-2xl leading-none pb-6">
+                  75%
+                </p>
+                <p
+                  class="text-black text-sm absolute bottom-1/4 translate-y-3 pb-6"
+                >
+                  Submission
+                </p>
+              </div>
             </div>
 
-            <div class="m-4 bg-white p-4 rounded-lg shadow-md">
-                <h3 class="text-md font-semibold text-gray-700 mb-3">Progress Kamu</h3>
-                <div class="flex items-center justify-around md:justify-start md:space-x-8">
-                    <div class="relative w-32 h-32 md:w-36 md:h-36">
-                        <svg class="w-full h-full" viewBox="0 0 36 36">
-                            <path class="text-gray-200"
-                                stroke-width="3"
-                                fill="none"
-                                stroke="currentColor"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="text-green-500"
-                                stroke-width="3"
-                                stroke-dasharray="93, 100" /* 93% progress */
-                                stroke-linecap="round"
-                                fill="none"
-                                stroke="currentColor"
-                                d="M18 2.0845
-                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                  a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
-                            <span class="text-2xl font-bold text-green-500">93%</span>
-                            <span class="text-xs text-gray-500">Submission</span>
-                        </div>
-                    </div>
-                    <div class="text-left">
-                        <p class="text-sm text-gray-600">Poin Keaktifan : <span class="font-semibold text-gray-800">2</span></p>
-                        <p class="text-sm text-gray-600 mt-1">Submit <span class="font-semibold text-gray-800">26</span> dari <span class="font-semibold text-gray-800">28</span><br class="md:hidden"> assignment yang ada<br class="md:hidden"> di kelas ini.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="flex-1 text-left">
+              <p class="font-semibold text-black">Poin Keaktifan : 2</p>
 
-            <div class="m-4 bg-white p-4 rounded-lg shadow-md">
-                <div class="flex justify-between items-center mb-3">
-                    <h3 class="text-md font-semibold text-gray-700">Kehadiran</h3>
-                </div>
-                <div
+              <p class="text-sm text-black mt-3 leading-tight">
+                Submit
+                <span class="font-semibold text-black">21 dari 28</span>
+                assignment <span class="inline md:hidden"><br /></span> yang ada
+                di kelas ini.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mt-8 bg-white p-5 rounded-xl border-2 border-[#D4DFF4] space-y-4"
+      >
+        <div class="flex justify-between items-center mb-3">
+          <h3 class="text-md font-semibold text-black">Kehadiran</h3>
+        </div>
+        <div
           class="h-7 flex justify-between items-center bg-[#D4DFF4] px-4 py-2 border-l-4 border-[#5580D6]"
         >
           <span class="font-medium text-black">Persentase Kehadiran</span>
           <span class="font-bold text-black">100%</span>
         </div>
-                <ul class="space-y-2">
-                    <li class="flex justify-between items-center p-2 bg-gray-50 rounded-md">
-                        <div class="flex items-center">
-                            <i class="bi bi-journal-bookmark-fill text-gray-700"></i>
-                            <span class="text-sm text-gray-700 ml-2">Day 10 - State Management</span>
-                        </div>
-                        <span class="text-xs font-medium text-white bg-blue-500 px-2 py-1 rounded-full">Hadir</span>
-                    </li>
-                    <li class="flex justify-between items-center p-2 bg-gray-50 rounded-md">
-                         <div class="flex items-center">
-                            <i class="bi bi-journal-bookmark-fill text-gray-700"></i>
-                            <span class="text-sm text-gray-700 ml-2">Day 9 - HTML dan CSS</span>
-                        </div>
-                        <span class="text-xs font-medium text-white bg-blue-500 px-2 py-1 rounded-full">Hadir</span>
-                    </li>
-                    <li class="flex justify-between items-center p-2 bg-gray-50 rounded-md">
-                        <div class="flex items-center">
-                            <i class="bi bi-journal-bookmark-fill text-gray-700"></i>
-                            <span class="text-sm text-gray-700 ml-2">UTP</span>
-                        </div>
-                        <span class="text-xs font-medium text-white bg-blue-500 px-2 py-1 rounded-full">Hadir</span>
-                    </li>
-                    <li class="flex justify-between items-center p-2 bg-gray-50 rounded-md">
-                         <div class="flex items-center">
-                            <i class="bi bi-journal-bookmark-fill text-gray-700"></i>
-                            <span class="text-sm text-gray-700 ml-2">Day 7 - Form HTTP Request</span>
-                        </div>
-                        <span class="text-xs font-medium text-white bg-blue-500 px-2 py-1 rounded-full">Hadir</span>
-                    </li>
-                </ul>
-                <div class="mt-4 text-center">
-                    <a href="#" class="text-sm text-blue-600 hover:text-blue-800 font-medium flex items-center justify-center">
-                        Lihat Lainnya
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a>
-                </div>
+        <ul class="space-y-2">
+          <li
+            class="flex justify-between items-center p-2 bg-gray-50 rounded-md"
+          >
+            <div class="flex items-center">
+              <i class="bi bi-journal-bookmark-fill text-[#5580D6]"></i>
+              <span class="text-sm text-black ml-2"
+                >Day 10 - State Management</span
+              >
             </div>
-        </main>
-        <!-- Bottom Navigation -->
-         <footer
+            <span
+              class="text-xs font-medium text-white bg-blue-500 px-2 py-1 rounded-full"
+              >Hadir</span
+            >
+          </li>
+          <li
+            class="flex justify-between items-center p-2 bg-gray-50 rounded-md"
+          >
+            <div class="flex items-center">
+              <i class="bi bi-journal-bookmark-fill text-[#5580D6]"></i>
+              <span class="text-sm text-black ml-2">Day 9 - HTML dan CSS</span>
+            </div>
+            <span
+              class="text-xs font-medium text-white bg-blue-500 px-2 py-1 rounded-full"
+              >Hadir</span
+            >
+          </li>
+          <li
+            class="flex justify-between items-center p-2 bg-gray-50 rounded-md"
+          >
+            <div class="flex items-center">
+              <i class="bi bi-journal-bookmark-fill text-[#5580D6]"></i>
+              <span class="text-sm text-black ml-2">UTP</span>
+            </div>
+            <span
+              class="text-xs font-medium text-white bg-blue-500 px-2 py-1 rounded-full"
+              >Hadir</span
+            >
+          </li>
+          <li
+            class="flex justify-between items-center p-2 bg-gray-50 rounded-md"
+          >
+            <div class="flex items-center">
+              <i class="bi bi-journal-bookmark-fill text-[#5580D6]"></i>
+              <span class="text-sm text-black ml-2"
+                >Day 7 - Form HTTP Request</span
+              >
+            </div>
+            <span
+              class="text-xs font-medium text-white bg-blue-500 px-2 py-1 rounded-full"
+              >Hadir</span
+            >
+          </li>
+        </ul>
+        <div class="mt-4 text-center">
+          <a
+            href="#"
+            class="text-sm text-blue-600 hover:text-blue-800 font-medium flex items-center justify-center"
+          >
+            Lihat Lainnya
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 ml-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </main>
+    <!-- Bottom Navigation -->
+    <footer
       class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[402px] bg-white border-t border-gray-200 px-6 py-3"
     >
       <div class="flex justify-around items-center">
