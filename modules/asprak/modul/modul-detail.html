@@ -6,26 +6,18 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/heroicons/1.0.6/heroicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 
     <link rel="stylesheet" href="../../../css/style.css">
     <title>Praktikum App</title>
 </head>
 <body class="mx-auto w-[402px] h-[100vh] bg-gray-50">
-   <div class="flex items-center justify-between mb-5">
-        <section class="w-full h-[126px] relative bg-[#5580D6] rounded-b-[20%]">
-            <div class="absolute bottom-10 left-10 text-xl font-semibold text-white">
-                <a href="../KelasModul.html" class="flex items-center gap-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                        <path
-                            d="M16.9421 20.4204L9.73738 13.1001C9.57937 12.9404 9.49074 12.7248 9.49074 12.5001C9.49074 12.2755 9.57937 12.0599 9.73738 11.9001L16.9405 4.57982C17.0984 4.41911 17.1869 4.2028 17.1869 3.97748C17.1869 3.75215 17.0984 3.53584 16.9405 3.37513C16.8634 3.29599 16.7711 3.2331 16.6693 3.19016C16.5675 3.14721 16.4581 3.12509 16.3475 3.12509C16.237 3.12509 16.1276 3.14721 16.0258 3.19016C15.9239 3.2331 15.8317 3.29599 15.7546 3.37513L8.55144 10.6939C8.07812 11.1759 7.81293 11.8245 7.81293 12.5001C7.81293 13.1757 8.07812 13.8243 8.55144 14.3064L15.7546 21.6251C15.8317 21.7045 15.9241 21.7676 16.026 21.8107C16.128 21.8538 16.2376 21.876 16.3483 21.876C16.459 21.876 16.5686 21.8538 16.6706 21.8107C16.7726 21.7676 16.8649 21.7045 16.9421 21.6251C17.1 21.4644 17.1885 21.2481 17.1885 21.0228C17.1885 20.7975 17.1 20.5812 16.9421 20.4204Z"
-                            fill="#FAFAFA" />
-                    </svg>
-                    <p class="font-bold">Modul</p>
-                </a>
-            </div>
-        </section>
-    </div>
+    <header class="w-full h-[110px] relative bg-[#5580D6] rounded-b-[30px] flex items-center justify-between px-6 mb-8">
+        <a href="#" class="flex items-center gap-4 text-white">
+            <i onclick="window.location.href='../KelasPreview.html'" class="bi bi-arrow-left text-2xl"></i>
+            <h1 class="text-xl font-semibold">Kelas</h1>
+        </a>
+    </header>
 
         <div class="flex relative flex-col mx-auto w-[90%] mt-4 items-center h-[325px] p-4 rounded-xl border border-[#D4DFF4]">
             <div class="flex justify-between  w-full ">
@@ -36,10 +28,6 @@
                         <p class="text-[#A0A0A0] text-xs">Pemrograman Web</p>
                     </div>
                 </div>
-            <div class="w-10 text-xs font-semibold text-[#F00] text-end">
-                Selasa
-                23.59
-            </div>
         </div>
 
         <hr class="w-full mt-4 mb-4 border border-[#D4DFF4]">
@@ -47,13 +35,17 @@
             <h2 class="font-semibold ">Deskripsi</h2>
             <p class="text-xs">Gunakan materi pada modul ini untuk mengerjakan tugas modul 10</p>
         </div>
+         <div class="mt-2 w-full mb-4">
+            <h2 class="font-semibold ">Tanggal Upload</h2>
+            <p class="text-xs">Senin, 14 Februari, 16:20</p>
+        </div>
         <div class="mt-2 w-full mb-4">
             <h2 class="font-semibold ">Lampiran</h2>
             <img src="../../../assets/img/praktikan/tugas/pdf.png" alt="pdf" class="w-32">
         </div>
 
         <!-- Tombol -->
-        <div class="flex gap-2 mt-4 w-full">
+        <div class="flex gap-2 mt-4 pt-5 w-full">
             <a href="#" class="flex gap-2 w-full bg-[#F00] text-white py-2 rounded-lg hover:bg-[#c00] align-items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                     <path fill-rule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 0 1 3.878.512.75.75 0 1 1-.256 1.478l-.209-.035-1.005 13.07a3 3 0 0 1-2.991 2.77H8.084a3 3 0 0 1-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 0 1-.256-1.478A48.567 48.567 0 0 1 7.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 0 1 3.369 0c1.603.051 2.815 1.387 2.815 2.951Zm-6.136-1.452a51.196 51.196 0 0 1 3.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 0 0-6 0v-.113c0-.794.609-1.428 1.364-1.452Zm-.355 5.945a.75.75 0 1 0-1.5.058l.347 9a.75.75 0 1 0 1.499-.058l-.346-9Zm5.48.058a.75.75 0 1 0-1.498-.058l-.347 9a.75.75 0 0 0 1.5.058l.345-9Z" clip-rule="evenodd" />
