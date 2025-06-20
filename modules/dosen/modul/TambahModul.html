@@ -2,36 +2,56 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Daftar Modul</title>
+    <title>Tambah Modul</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <style>
-      .file-input-hidden {
-        width: 0.1px;
-        height: 0.1px;
-        opacity: 0;
-        overflow: hidden;
-        position: absolute;
-        z-index: -1;
-      }
-    </style>
+    <style></style>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body class="mx-auto w-[402px]">
     <!-- Header -->
-    <header
-      class="w-full h-[110px] relative bg-blue-600 rounded-b-[30px] flex items-center justify-between px-6 mb-8"
-    >
-      <a href="#" class="flex items-center gap-4 text-white">
-        <i class="bi bi-arrow-left text-2xl"></i>
-        <h1 class="text-xl font-semibold">Modul</h1>
-      </a>
-      <button class="relative text-white">
-        <i class="bi bi-bell-fill text-2xl"></i>
-      </button>
-    </header>
+    <div class="flex items-center justify-between mb-5 flex-nowrap">
+      <section class="w-full h-[126px] relative bg-[#5580D6] rounded-b-[20%]">
+        <div
+          class="absolute bottom-10 left-10 text-lg font-semibold text-white"
+        >
+          <a href="DaftarModul.html" class="flex items-center gap-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <path
+                d="M16.9421 20.4204L9.73738 13.1001C9.57937 12.9404 9.49074 12.7248 9.49074 12.5001C9.49074 12.2755 9.57937 12.0599 9.73738 11.9001L16.9405 4.57982C17.0984 4.41911 17.1869 4.2028 17.1869 3.97748C17.1869 3.75215 17.0984 3.53584 16.9405 3.37513C16.8634 3.29599 16.7711 3.2331 16.6693 3.19016C16.5675 3.14721 16.4581 3.12509 16.3475 3.12509C16.237 3.12509 16.1276 3.14721 16.0258 3.19016C15.9239 3.2331 15.8317 3.29599 15.7546 3.37513L8.55144 10.6939C8.07812 11.1759 7.81293 11.8245 7.81293 12.5001C7.81293 13.1757 8.07812 13.8243 8.55144 14.3064L15.7546 21.6251C15.8317 21.7045 15.9241 21.7676 16.026 21.8107C16.128 21.8538 16.2376 21.876 16.3483 21.876C16.459 21.876 16.5686 21.8538 16.6706 21.8107C16.7726 21.7676 16.8649 21.7045 16.9421 21.6251C17.1 21.4644 17.1885 21.2481 17.1885 21.0228C17.1885 20.7975 17.1 20.5812 16.9421 20.4204Z"
+                fill="#FAFAFA"
+              />
+            </svg>
+            <p class="font-bold">Tambah Modul</p>
+          </a>
+          </div>
+          <div class="absolute bottom-10 right-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="white"
+              width="28"
+              height="28"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.25 9a6.75 6.75 0 0 1 13.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 0 1-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 1 1-7.48 0 24.585 24.585 0 0 1-4.831-1.244.75.75 0 0 1-.298-1.205A8.217 8.217 0 0 0 5.25 9.75V9Zm4.502 8.9a2.25 2.25 0 1 0 4.496 0 25.057 25.057 0 0 1-4.496 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- Main Content -->
     <main class="flex-grow px-6 space-y-6 pb-6">
       <!-- Form Tambah Modul -->

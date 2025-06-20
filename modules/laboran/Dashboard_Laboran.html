@@ -5,29 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body class="bg-gray-100 text-gray-800 min-h-screen pb-28">
+<body class="mx-auto w-[402px] h-[100vh] bg-gray-50 pb-28">
 
-  <!-- Header -->
-  <header class="bg-blue-600 text-white px-4 py-6 rounded-b-3xl shadow relative">
+  <header class="bg-[#5580D6] text-white px-4 py-6 rounded-b-3xl shadow relative">
     <div class="flex justify-between items-center">
       <h1 class="text-xl font-bold">Dashboard</h1>
-      <i data-feather="bell" class="w-5 h-5"></i>
-    </div>
+      <i class="bi bi-bell-fill text-white text-lg"></i> </div>
   </header>
 
-  <!-- Peminjaman Alat -->
   <section class="px-4 mt-4">
     <h2 class="font-semibold text-lg mb-2">Peminjaman Alat</h2>
     <div class="bg-white rounded-lg shadow p-4 text-sm">
       <div class="flex justify-between mb-2">
-        <span class="bg-blue-600 text-white px-3 py-1 rounded-full">Dipinjam: 12</span>
-        <span class="bg-green-600 text-white px-3 py-1 rounded-full">Tersedia: 5</span>
+        <span class="bg-[#3366CC] text-white px-3 py-1 rounded-full">Dipinjam: 12</span> <span class="bg-green-600 text-white px-3 py-1 rounded-full">Tersedia: 5</span>
       </div>
       <div class="w-full flex justify-center my-2">
         <img src="../../assets/img/chart.png" alt="chart" class="w-32 h-32 object-contain" />
-
       </div>
       <div class="flex justify-between">
         <span class="bg-red-600 text-white px-3 py-1 rounded-full">Rusak: 3</span>
@@ -36,13 +31,11 @@
     </div>
   </section>
 
-  <!-- Laporan Kerusakan -->
   <section class="px-4 mt-4">
     <h2 class="font-semibold text-lg mb-2">Laporan Kerusakan</h2>
     <div class="bg-white rounded-lg shadow overflow-x-auto">
       <table class="w-full text-sm">
-        <thead class="bg-blue-100 text-blue-800">
-          <tr>
+        <thead class="bg-[#5580D6] text-white"> <tr>
             <th class="px-3 py-2 text-left">ID</th>
             <th class="px-3 py-2 text-left">Nama Alat</th>
             <th class="px-3 py-2 text-left">Catatan</th>
@@ -60,8 +53,7 @@
             <td class="px-3 py-2">ALT-046</td>
             <td class="px-3 py-2">Projector</td>
             <td class="px-3 py-2">Tidak berfungsi</td>
-            <td class="px-3 py-2 text-blue-600 font-semibold">On Progress</td>
-          </tr>
+            <td class="px-3 py-2 text-[#3366CC] font-semibold">On Progress</td> </tr>
           <tr class="border-t">
             <td class="px-3 py-2">ALT-047</td>
             <td class="px-3 py-2">Mouse</td>
@@ -78,20 +70,17 @@
             <td class="px-3 py-2">ALT-049</td>
             <td class="px-3 py-2">PC</td>
             <td class="px-3 py-2">Suara fan keras</td>
-            <td class="px-3 py-2 text-blue-600 font-semibold">On Progress</td>
-          </tr>
+            <td class="px-3 py-2 text-[#3366CC] font-semibold">On Progress</td> </tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <!-- Ringkasan Peminjaman -->
   <section class="px-4 mt-4 mb-28">
     <h2 class="font-semibold text-lg mb-2">Ringkasan Peminjaman</h2>
     <div class="bg-white rounded-lg shadow overflow-x-auto">
       <table class="w-full text-sm">
-        <thead class="bg-blue-100 text-blue-800">
-          <tr>
+        <thead class="bg-[#5580D6] text-white"> <tr>
             <th class="px-3 py-2 text-left">ID</th>
             <th class="px-3 py-2 text-left">Nama Alat</th>
             <th class="px-3 py-2 text-left">Peminjam</th>
@@ -109,8 +98,7 @@
             <td class="px-3 py-2">ALT-051</td>
             <td class="px-3 py-2">Projector</td>
             <td class="px-3 py-2">235150401111016</td>
-            <td class="px-3 py-2 text-blue-600 font-semibold">Dipinjam</td>
-          </tr>
+            <td class="px-3 py-2 text-[#3366CC] font-semibold">Dipinjam</td> </tr>
           <tr class="border-t">
             <td class="px-3 py-2">ALT-052</td>
             <td class="px-3 py-2">Mouse</td>
@@ -121,42 +109,32 @@
             <td class="px-3 py-2">ALT-053</td>
             <td class="px-3 py-2">Monitor</td>
             <td class="px-3 py-2">235150401111016</td>
-            <td class="px-3 py-2 text-blue-600 font-semibold">Dipinjam</td>
-          </tr>
+            <td class="px-3 py-2 text-[#3366CC] font-semibold">Dipinjam</td> </tr>
           <tr class="border-t">
             <td class="px-3 py-2">ALT-054</td>
             <td class="px-3 py-2">PC</td>
             <td class="px-3 py-2">235150401111016</td>
-            <td class="px-3 py-2 text-blue-600 font-semibold">Dipinjam</td>
-          </tr>
+            <td class="px-3 py-2 text-[#3366CC] font-semibold">Dipinjam</td> </tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <!-- Bottom Navigation -->
-  <footer class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-md flex justify-around py-2">
-    <a href="#" class="flex flex-col items-center text-gray-500 text-xs">
-      <i data-feather="home" class="w-5 h-5"></i>
-      Home
-    </a>
-    <a href="#" class="flex flex-col items-center text-gray-500 text-xs">
-      <i data-feather="calendar" class="w-5 h-5"></i>
-      Jadwal
-    </a>
-    <a href="#" class="flex flex-col items-center text-gray-500 text-xs">
-      <i data-feather="message-circle" class="w-5 h-5"></i>
-      Chat
-    </a>
-    <a href="#" class="flex flex-col items-center text-blue-600 text-xs font-semibold">
-      <i data-feather="bar-chart-2" class="w-5 h-5"></i>
-      Dashboard
-    </a>
+  <footer class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-[402px] bg-white border-t border-gray-200 px-6 py-3">
+    <div class="flex justify-around items-center">
+      <a href="#" class="flex flex-col items-center opacity-50 text-xs text-[#3366CC]">
+        <i class="bi bi-house-fill text-2xl"></i> Home
+      </a>
+      <a href="#" class="flex flex-col items-center opacity-50 text-xs text-[#3366CC]">
+        <i class="bi bi-calendar-fill text-2xl"></i> Jadwal
+      </a>
+      <a href="#" class="flex flex-col items-center opacity-50 text-xs text-[#3366CC]">
+        <i class="bi bi-chat-fill text-2xl"></i> Chat
+      </a>
+      <a href="#" class="flex flex-col items-center text-[#3366CC] text-xs font-semibold">
+        <i class="bi bi-graph-up text-2xl"></i> Dashboard
+      </a>
+    </div>
   </footer>
-
-  <!-- Feather Icon Init -->
-  <script>
-    feather.replace();
-  </script>
 </body>
 </html>
