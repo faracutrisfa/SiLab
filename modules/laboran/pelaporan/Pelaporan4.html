@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../../css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Pelaporan Kerusakan - Step 2</title>
+  </head>
+
+  <body
+    class="mx-auto w-[402px] min-h-screen bg-gray-50 font-poppins relative pb-32"
+  >
+    <!-- Header with Back Button -->
+    <div class="pt-8 px-6 mt-4">
+      <a href="Pelaporan3.html" class="text-white">
+        <i class="bi bi-chevron-left text-[#5580D6] text-3xl"></i>
+      </a>
+    </div>
+
+    <!-- Step Indicator with Progress Bar -->
+    <div class="px-8 mt-10">
+      <div class="flex justify-between items-center relative">
+        <!-- Progress Bar -->
+        <div
+          class="absolute h-1 bg-[#5580D6] left-[12%] right-[50%] top-5 -z-10"
+        ></div>
+        <div
+          class="absolute h-1 bg-[#D4DFF4] left-[50%] right-[12%] top-5 -z-10"
+        ></div>
+
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="w-12 h-12 bg-[#5580D6] text-white rounded-full flex items-center justify-center font-bold text-xl mb-2"
+          >
+            1
+          </div>
+          <p class="text-sm font-medium text-[#5580D6]">Tulis Laporan</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="w-12 h-12 bg-[#5580D6] text-[#FFFFFF] rounded-full flex items-center justify-center font-bold text-xl mb-2"
+          >
+            2
+          </div>
+          <p class="text-sm font-medium text-[#5580D6]">Pilih Bukti</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="w-12 h-12 bg-[#D4DFF4] text-[#FFFFFF] rounded-full flex items-center justify-center font-bold text-xl mb-2"
+          >
+            3
+          </div>
+          <p class="text-sm font-medium text-[#D4DFF4]">Pratinjau</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="mt-8">
+      <div class="h-px bg-gray-200 mb-8"></div>
+    </div>
+
+    <!-- Form Content -->
+    <div class="mx-4 mt-4">
+      <div
+        class="bg-white shadow-sm border border-[#D4DFF4] rounded-2xl p-4 h-[calc(77vh-200px)] overflow-y-auto"
+      >
+        <h2 class="text-lg font-medium text-gray-800 mb-4">
+          Upload Foto Atau Video Bukti Pelaporan
+        </h2>
+        <div class="flex flex-col justify-center items-center min-h-[300px]">
+          <label for="upload" class="cursor-pointer flex flex-col items-center">
+            <img
+              src="../../../assets/img/laboran/upload.png"
+              alt="upload icon"
+            />
+          </label>
+          <input type="file" id="upload" class="hidden" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="fixed bottom-0 left-0 right-0">
+      <!-- Divider -->
+      <div class="h-px bg-gray-200 mb-8"></div>
+
+      <!-- Button -->
+      <div class="mx-6 mb-8">
+        <button
+          type="button"
+          onclick="window.location.href='./Pelaporan5.html'"
+          class="w-full py-4 bg-[#5580D6] text-white font-bold rounded-xl transition-all hover:bg-[#4B6FBA] active:bg-[#406099] shadow-lg"
+        >
+          LANJUT
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
