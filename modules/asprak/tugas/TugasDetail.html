@@ -66,5 +66,57 @@
         </div>
     </div>
 </div>
+
+<!-- Pop up -->
+<div id="modalEditTugas" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+  <div class="bg-white w-[90%] max-w-md rounded-xl p-6 shadow-lg">
+    <h2 class="text-lg font-bold mb-4">Perbarui Tugas</h2>
+
+    <form>
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-1">Judul Tugas</label>
+        <input type="text" placeholder="masukkan judul tugas" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm" />
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-1">Deskripsi Tugas</label>
+        <input type="text" placeholder="masukkan deskripsi tugas" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm" />
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-1">Tanggal Pengumpulan</label>
+        <input type="date" value="2025-05-29" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm" />
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-sm font-medium mb-1">Lampiran</label>
+        <div class="flex items-center border border-gray-300 rounded-md px-3 py-2">
+          <img src="../../../assets/img/praktikan/tugas/pdf.png" class="w-4 h-4 mr-2" alt="pdf">
+          <span class="text-sm truncate">Format Laporan.pdf</span>
+          <button type="button" onclick="alert('File dihapus!')" class="ml-auto text-red-500 text-sm hover:text-red-700">&times;</button>
+        </div>
+      </div>
+
+      <button type="submit" class="w-full bg-[#0029A6] text-white rounded-md py-2 font-semibold">Perbarui</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('modalEditTugas');
+  const btnUbah = document.querySelector('a[href="#"] + a');
+
+  btnUbah.addEventListener('click', function(e) {
+    e.preventDefault();
+    modal.classList.remove('hidden');
+  });
+
+  window.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
+</script>
+
 </body>
 </html>
